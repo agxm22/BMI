@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.432),
+    0 0 30px rgba(0, 81, 255, 0.555),
+    0 0 60px rgba(0, 217, 255, 0.623);
+  position: relative;
+  transition: box-shadow 0.5s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2e2e2e;
+  color: white;
+  font-size: 16px;
+}
+
+.form input::placeholder {
+  color: #999;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  background: #00adb5;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #00a1a9;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Result background colors */
+.result-green {
+  background-color: #29361cdc;
+  color: #78ff7d;
+}
+
+.result-yellow {
+  background-color: #36321c;
+  color: #ffee57;
+}
+
+.result-red {
+  background-color: #361c1c;
+  color: #ff0000;
+}
+
+/* Glow background themes for container */
+.container-green {
+  box-shadow:
+    0 0 20px rgba(0, 255, 128, 0.3),
+    0 0 40px rgba(0, 255, 128, 0.4),
+    0 0 60px rgba(0, 255, 128, 0.5);
+}
+
+.container-yellow {
+  box-shadow:
+    0 0 20px rgba(255, 255, 0, 0.3),
+    0 0 40px rgba(255, 255, 0, 0.4),
+    0 0 60px rgba(255, 255, 0, 0.5);
+}
+
+.container-red {
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.3),
+    0 0 40px rgba(255, 0, 0, 0.4),
+    0 0 60px rgba(255, 0, 0, 0.5);
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
